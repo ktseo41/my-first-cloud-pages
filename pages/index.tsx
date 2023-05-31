@@ -65,14 +65,22 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            <Image
-              src="/fearticle.svg"
-              alt="Fe Article Logo"
-              className="inline-block mr-1 bg-gradient-to-br from-[#00ff80] to-[#007928] dark:from-[#00ff80] dark:to-[#007928]"
-              width={25}
-              height={25}
-              priority
-            ></Image>
+            <div
+              className="mr-1 inline-block relative"
+              style={{
+                width: "1.5rem",
+                height: "1.5rem",
+                top: "0.150rem",
+              }}
+            >
+              <Image
+                src="/fearticle.svg"
+                alt="Fe Article Logo"
+                className=" bg-gradient-to-br from-[#00ff80] to-[#007928] dark:from-[#00ff80] dark:to-[#007928]"
+                fill
+                style={{ objectFit: "contain" }}
+              ></Image>
+            </div>
             Fe Article 방문{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
@@ -110,7 +118,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Execute hello.ts{" "}
+            hello.ts{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
