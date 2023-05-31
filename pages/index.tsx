@@ -66,14 +66,14 @@ export default function Home() {
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
             <Image
-              src="/fearticle.png"
+              src="/fearticle.svg"
               alt="Fe Article Logo"
-              className="inline-block mr-1"
-              width={20}
-              height={20}
+              className="inline-block mr-1 bg-gradient-to-br from-[#00ff80] to-[#007928] dark:from-[#00ff80] dark:to-[#007928]"
+              width={25}
+              height={25}
               priority
             ></Image>
-            Fe Article 방문하기{" "}
+            Fe Article 방문{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -104,19 +104,20 @@ export default function Home() {
         </a>
 
         <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
+          href="/api/hello"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
+            Execute hello.ts{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            {/* next.js api 설명 */}
+            this api returns hello message
           </p>
         </a>
       </div>
